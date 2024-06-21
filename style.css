@@ -1,0 +1,222 @@
+* {
+  margin: 0%;
+  font-family: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+   box-sizing: border-box;
+}
+nav#navbar {
+  background-color: #1d2125;
+  /* color: white; */
+  height: 7vh;
+  /* padding-left: 10px; */
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#trello {
+  color: #9fadbc;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dropdownAndSearch {
+  display: flex;
+  align-items: center;
+  /* border: 3px solid black; */
+}
+li.dropdown {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 50%; */
+  gap: 10px;
+  font-size: 14px;
+}
+.dropdown p {
+  /* border: 2px solid black; */
+  margin: 0%;
+  color: #9fadbc;
+  font-weight: 600;
+}
+#navItems {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#navbarCreateButon {
+  color: black;
+}
+
+/*  -------------------------------------- header close ------------------------- */
+/* --------------------------------------- section start ------------------------- */
+
+/* ==================== navbar==================== */
+.boardNav {
+  background-color: #172b4d;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  height: 7vh;
+}
+#navbarScroll {
+  background-color: #1d2125;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.sectionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sectionOne .navHeading {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0%;
+}
+.boardBtn {
+  background-color: #dcdfe4;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boardBtn:hover {
+  background-color: white;
+}
+.navHeading,
+.dropdown {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.navHeading:hover,
+.dropdown:hover {
+  background-color: #314975;
+}
+.username {
+  border-radius: 50%;
+  color: white;
+  /* font-weight: 600; */
+  font-size: 11px;
+  height: 24px;
+  width: 24px;
+  background-color: #0052cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ==================== close navbar ==================== */
+/* ====================  home  ==================== */
+
+.home {
+  background-color: #07306a;
+  min-height: 86vh;  
+}
+.cardHolder {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-shadow-color: grey;
+  min-height: 15vh;
+}
+.cards {
+  background-color: #101204;
+  min-width: 270px;
+  padding: 8px;
+  border-radius: 14px;
+  /* min-height: 15vh; */
+  /* height: 60vh; */
+}
+.cardNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.cardNav h6 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.cardNav h6,
+.cardNav div,
+.tasks {
+  color: #9fadbc;
+}
+.cardHome {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tasks {
+  width: 100%;
+  background-color: #22272b;
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0%;
+}
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #9fadbc;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+form { 
+    margin-top: 5px;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+input:focus:hover {
+  background-color: #22272b;
+}
+input:focus {
+  background-color: #22272b;
+}
+input::placeholder {
+  color: #9fadbc;
+  font-weight: 500;
+  font-size: 14px;
+}
+input:hover {
+  background-color: #282f27;
+}
+.cardCreator {
+  background-color: #43699f;
+  min-width: 270px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.cardCreator:hover {
+  background-color: #214c86;
+}
+.cardCreator form input {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0%;
+  font-size: 14px;
+}
+
+/* ====================  home close  ==================== */
