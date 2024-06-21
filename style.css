@@ -168,6 +168,23 @@ li.dropdown {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.tasks i {
+  font-size: 14px;
+  color: #22272b;
+  cursor: pointer;
+  /* display: none; */
+  padding-right: 4px;
+}
+.tasks:hover{
+  i {
+    display:block;
+    color: #9fadbc;
+  }
 }
 input {
   width: 100%;

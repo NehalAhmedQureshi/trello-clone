@@ -1,11 +1,15 @@
 const cards = document.querySelectorAll('.cards');
 const addCardBtn = document.querySelector('.cardCreato');
 const cardHolder = document.querySelector('.cardHolder');
+// const trash = document.querySelectorAll('.trash')
+const tasks = document.querySelectorAll('.tasks')
 
 // console.log("🚀 ~ addCard:", addCardBtn.querySelector('input'));
 // console.log("🚀 ~ card:", cardHolder.querySelector('cards'));
+console.log("🚀 ~ cards:", cards)
 
-cardHolder.addEventListener('onclick' ,(event) => {
+
+cardHolder.addEventListener('onclick', (event) => {
     event.preventDefault()
 })
 let addTask = (event) => {
@@ -28,23 +32,32 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 const createTasks = (value) => {
-    const task = document.createElement('p');
+    const task = document.createElement('div');
     const text = document.createTextNode(value);
-    
+    const trashIcon = document.createElement('i')
+    // trashIcon.setAttribute('draggable', 'true')
+    trashIcon.classList.add('fa-solid')
+    trashIcon.classList.add('fa-trash')
+    trashIcon.classList.add('trash')
+
+
     task.setAttribute('draggable', 'true');
     task.classList.add('tasks');
-    
+
     task.appendChild(text);
-    
+    task.appendChild(trashIcon)
+
     return task;
 };
 
+
+
 const addNewCard = (event) => {
     event.preventDefault();
-    
+
     const input = addCardBtn.querySelector('input');
     const cardTitle = input.value;
-    
+
     if (cardTitle.trim() !== "") {
         const newCard = createCard(cardTitle);
         cardHolder.insertBefore(newCard, addCardBtn);
@@ -92,3 +105,22 @@ const createCard = (cardHeading) => {
 
     return cards;
 };
+
+const deleteTasks = (event) => {
+    event.preventDefault();
+    // console.log(event.target);
+    const clickTrash = event.target
+    const trashParent = clickTrash.parentElement
+    trashParent.style.display = 'none'
+}
+
+for (let i = 0; i < cards.length; i++) {
+ 
+    for (let j = 0; j < tasks.length; j++) {
+        
+        // console.log(cards[i].children[1].children[j].children[0]);
+        const trash = cards[i].children[1].children[j].children[0]
+        trash.addEventListener('click' , deleteTasks)
+    }
+
+}
