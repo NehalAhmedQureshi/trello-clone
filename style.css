@@ -110,7 +110,7 @@ li.dropdown {
   width: 24px;
   background-color: #0052cc;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
   cursor: pointer;
 }
@@ -145,10 +145,15 @@ li.dropdown {
   justify-content: space-between;
   padding: 10px;
   align-items: center;
+  /* border: 2px solid white; */
 }
 .cardNav h6 {
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 0%;
+}
+.cardNav .icon {
+  cursor: pointer;
 }
 .cardNav h6,
 .cardNav div,
@@ -167,11 +172,14 @@ li.dropdown {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 0%;
+  /* margin-bottom: 0%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+}
+.tasks p {
+  margin-bottom: 0%;
 }
 .tasks i {
   font-size: 14px;
