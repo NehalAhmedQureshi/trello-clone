@@ -138,6 +138,7 @@ li.dropdown {
   max-width: 350px;
   padding: 8px;
   border-radius: 14px;
+  height: auto;
   /* min-height: 15vh; */
   /* height: 60vh; */
 }
