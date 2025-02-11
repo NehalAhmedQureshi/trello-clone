@@ -135,6 +135,7 @@ li.dropdown {
 .cards {
   background-color: #101204;
   min-width: 270px;
+  max-width: 350px;
   padding: 8px;
   border-radius: 14px;
   /* min-height: 15vh; */
@@ -177,6 +178,7 @@ li.dropdown {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .tasks p {
   margin-bottom: 0%;
