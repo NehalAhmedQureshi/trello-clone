@@ -131,10 +131,8 @@ const createCard = (cardHeading) => {
     const input = document.createElement('input');
     input.setAttribute('placeholder', '+ Add a card');
     input.setAttribute('type', 'text');
-    input.setAttribute('maxlength', '60');
     form.appendChild(input);
     cardHome.appendChild(form);
-    
     card.appendChild(cardNav);
     card.appendChild(cardHome);
 

@@ -178,7 +178,7 @@ li.dropdown {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .tasks p {
   margin-bottom: 0%;
